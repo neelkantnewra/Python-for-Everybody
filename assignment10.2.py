@@ -16,6 +16,9 @@ for line in handle:
         else:
             z = line.split()
             lst.append(z[5].split(':')[0])
+            
+#appending the list  must be clear
+
 flist = []
 for i in lst:
     dic[i] = lst.count(i)
