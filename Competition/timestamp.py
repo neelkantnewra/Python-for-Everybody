@@ -4,6 +4,10 @@
 #github: https://github.com/neelkantnewra
 
 def StringChallenge(strParam):
+    """
+    Input: strParam(String)
+    Output:strParam(Int)
+    """
     Time = list(strParam.split("-"))
     Start_time = convert(Time[0])
     End_time = convert(Time[1])
@@ -14,6 +18,10 @@ def StringChallenge(strParam):
     return strParam
 
 def convert(time):
+    """
+    Input:(Sring)HH:MM:AM/PM 
+    Output:(Int)MM 
+    """
     time_hrs = time.split(":")[0]
     time_min = time.split(":")[1][:2]
     timeap =  time.split(":")[1][2:]
@@ -24,4 +32,4 @@ def convert(time):
         time_hrs = str(int(time_hrs)+12)
     return int(time_hrs)* 60 + int(time_min)
   
-print(StringChallenge(input()))   
+print(StringChallenge(input())) 
