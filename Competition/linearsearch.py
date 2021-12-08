@@ -3,7 +3,7 @@
 
 def LinearSearch(lst,n):
     '''
-    lst: sorted array
+    lst: array
     n: number to be find
     return(bool) True/False 
     '''
